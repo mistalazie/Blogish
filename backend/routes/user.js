@@ -15,6 +15,7 @@ router.get('/', (req, res) =>{
     res.send('working user route')
 })
 
+//create user
 router.post('/signup', async (req, res) => {
     const {success} = signupSchema.safeParse(req.body)
     if(!success) {
@@ -43,6 +44,7 @@ router.post('/signup', async (req, res) => {
     }
 })
 
+//log in user
 router.post('/signin', async (req, res) => {
     const {success} = signinSchema.safeParse(req.body);
     if(!success) {
