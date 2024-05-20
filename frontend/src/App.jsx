@@ -5,7 +5,6 @@ import { Signin } from './pages/Signin'
 import { Signup } from './pages/Signup'
 import { Create } from './pages/Create'
 import { Dashboard } from './pages/Dashboard'
-import { TopBar } from './components/TopBar'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 
@@ -14,7 +13,6 @@ function App() {
 
   return (
     <BrowserRouter>
-    <TopBar/>
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/signin" element={<Signin />} />
