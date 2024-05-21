@@ -1,6 +1,11 @@
+import { CreateTopBar } from "../components/CreateTopBar";
+
 export function Create () {
     return (
-        <div>Create</div>
+        <div>
+            <CreateTopBar/>
+            
+        </div>
     )
 
 }

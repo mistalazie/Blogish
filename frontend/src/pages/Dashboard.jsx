@@ -1,5 +1,9 @@
+import { DasbBoardTopBar } from "../components/DashBoardTopBar"
+
 export const Dashboard = () => {
     return (
-        <div>Dashboard</div>
+        <div>
+            <DasbBoardTopBar/>
+        </div>
     )
 }
